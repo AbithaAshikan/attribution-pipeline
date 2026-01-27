@@ -1,0 +1,18 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# dbt / DuckDB
+target/
+dbt_packages/
+*.duckdb
+
+# Data files (IMPORTANT)
+data/
+*.csv
+*.parquet
+
+# OS junk
+.DS_Store
+Thumbs.db
