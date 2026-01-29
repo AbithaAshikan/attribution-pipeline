@@ -1,0 +1,4 @@
+source:
+  - name : GA4
+    tables:
+      - name : ga4_event
