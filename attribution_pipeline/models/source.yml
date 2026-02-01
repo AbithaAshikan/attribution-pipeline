@@ -1,4 +1,7 @@
-source:
-  - name : GA4
+version: 2
+
+sources:
+  - name: ga4
+    schema: main
     tables:
       - name : ga4_event
