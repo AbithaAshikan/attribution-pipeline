@@ -18,5 +18,5 @@ SELECT *
     WHERE rk = 1
 
 {% if is_incremental() %}
-AND event_ts_utc > (SELECT MAX(first_click_time) FROM {{ this }})
+AND user_pseudo_id NOT IN (SELECT user_pseudo_id FROM {{ this }})
 {% endif %}

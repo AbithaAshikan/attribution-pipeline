@@ -16,6 +16,6 @@ SELECT *
     )
     WHERE rk = 1
 
-{% if is_incremental() %}}
-and last_click_time > (select MAX(last_click_time) from {{this}})
+{% if is_incremental() %}
+AND user_pseudo_id NOT IN (SELECT user_pseudo_id FROM {{ this }})
 {% endif %}

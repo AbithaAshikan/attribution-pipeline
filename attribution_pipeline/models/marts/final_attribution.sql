@@ -14,6 +14,6 @@ JOIN {{ ref('last_click') }} l
     ON f.user_pseudo_id = l.user_pseudo_id
 
 {% if is_incremental() %}
-where f.first_click_time > (select max(f.fast_click_time) from {{ this }})
+AND user_pseudo_id NOT IN (SELECT user_pseudo_id FROM {{ this }})
 {% endif %}
 
