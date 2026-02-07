@@ -5,3 +5,9 @@
     installed bdt and duckdb for data warehouse
 29-01-2026
     loaded data into duckdb and created table raw_event and tested the data loaded succesfully
+30-01-2026
+    Created staging model to fetch required columns.
+31-01-2026
+    Created first_click and last_click model in Marts folder. Created final-attribution model.
+02-02-2026
+    Createc streaming dashboard for incremental changes.
