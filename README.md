@@ -32,5 +32,5 @@ Attribution is calculated at the user_id level.
 # How to run
 dbt run - to run entire dbt model
 dbt run -select <model_name> - to run particular model
-streamlit run 
+streamlit run streaming_script.py
 
